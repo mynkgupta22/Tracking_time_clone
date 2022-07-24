@@ -1,0 +1,158 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .left {
+    background-color: #1d252c;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+  .right {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    margin-top: 180px;
+  }
+  .right > h3 {
+    font-weight: 100;
+  }
+  input {
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 5px;
+
+    font-size: 14px;
+  }
+  .sub {
+    color: white;
+    background-color: rgb(52, 52, 52);
+    height: 50px;
+  }
+  .sub:hover {
+    background-color: black;
+  }
+  .right > form > p {
+    font-size: 12px;
+    margin: 0px;
+    margin-bottom: 10px;
+
+    color: rgb(140, 139, 139);
+  }
+  .right > p {
+    color: rgb(140, 139, 139);
+    font-size: 14px;
+  }
+  .terms {
+    display: flex;
+    justify-content: center;
+  }
+  .terms > p {
+    color: black;
+    padding: 10px;
+  }
+  #checkbox {
+    width: 20px;
+    margin: 0px;
+  }
+  .labform {
+    color: rgb(140, 139, 139);
+    font-size: 14px;
+    text-align: start;
+  }
+  hr {
+    width: 500px;
+    height: 5px;
+
+    background-color: 10% green;
+    border-radius: 10px;
+  }
+  #progressbar {
+    width: 400px;
+    background-color: rgb(155, 154, 154);
+    margin: auto;
+    border-radius: 20px;
+   
+  }
+  #bar {
+    width: 0%;
+    background-color: green;
+    height: 10px;
+    border-radius: 20px;
+  }
+
+  @media screen and (min-width:481px) and (max-width:768px) {
+    .main {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .left {
+        background-color: #1d252c;
+        width: 100%;
+        height: auto;
+        position: inherit;
+        display: flex;
+        justify-content: center;
+      
+        
+      }
+      .left>img{
+        width: 50%;
+      }
+       
+      .right {
+        width: 100%;
+        height: auto;
+        position: inherit;
+        
+        margin-top: 50px;
+      }
+      .right > h3 {
+        margin-top: 50px;
+      }
+  }
+  @media screen and (min-width:320px) and (max-width:480px) {
+    .main {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .left {
+        background-color: #1d252c;
+        width: 100%;
+        height: auto;
+        position: inherit;
+        display: flex;
+        justify-content: center;
+      
+        
+      }
+      .left>img{
+        width: 50%;
+      }
+       
+      .right {
+        width: 100%;
+        height: auto;
+        position: inherit;
+        
+        margin-top: 50px;
+      }
+      .right > h3 {
+        margin-top: 50px;
+      }
+  }

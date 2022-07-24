@@ -1,0 +1,165 @@
+*{
+    background-color: #f5f8f9;
+    
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#navbar{
+    width: 97%;
+    
+    position: fixed;
+    padding: 25px;
+   z-index: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}   
+#menu{
+    display: flex;
+    margin-right: 100px;
+    
+    
+   
+} 
+#menu>a{
+    margin: 0px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+#logo{
+    margin-left: 100px;
+}
+#logo>a{
+    border: none;
+    background-color: transparent;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#menu>a:nth-child(1){
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+}
+#menu>a:nth-child(2){
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+    
+}
+#menu>a:nth-child(3){
+    border: none;
+    background-color: transparent;
+    
+    margin-top: 10px;
+}
+#menu>a:nth-child(4){
+    
+    
+    border-radius: 8px;
+    background-color: transparent;
+    color:#00ac95 ;
+    border: 2px solid #00ac95;
+    
+    padding: 10px 30px;
+   
+    
+}
+#menu>a:nth-child(5){
+    
+   
+    border-radius: 8px;
+    background-color: #00ac95;
+    color: #ffffff;
+    border: 2px solid #00ac95;
+    padding: 10px 40px;
+}
+#menu>a:nth-child(5):hover{
+    border-radius: 8px;
+    background-color: transparent;
+    color:#00ac95 ;
+    border: 2px solid #00ac95;
+    
+    padding: 10px 40px;
+}
+#menu>a:nth-child(4):hover{
+    border-radius: 8px;
+    background-color: #00ac95;
+    color: #ffffff;
+    border: 2px solid #00ac95;
+    padding: 10px 30px;
+}
+@media (max-width:768px) {
+    #menu>a:nth-child(5){
+    
+      font-size: 10px;
+        padding: 5px 1px;
+    }
+    #menu>a:nth-child(5):hover{
+        font-size: 10px;
+        padding: 15px 1px;
+    }
+    #menu>a:nth-child(4):hover{
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+    #menu>a:nth-child(1){
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #menu>a:nth-child(2){
+        
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    #menu>a:nth-child(3){
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    #menu>a:nth-child(4){
+        font-size: 10px;
+        padding: 5px 5px;
+       
+        
+    }
+    #logo{
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    #logo>a{
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+       
+        
+    }
+    #menu>a{
+        margin: 0px 5px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    
+    }
+    #menu{
+        display: flex;
+        margin-right: 120px;
+        
+        
+       
+    } 
+}
+
+

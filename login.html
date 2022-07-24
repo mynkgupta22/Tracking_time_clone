@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <img src="https://pro.trackingtime.co/img/login/1.svg" alt="" />
+      </div>
+      <div class="right">
+        <h3>TRACKING<span style="font-weight: bold">TIME</span></h3>
+        <form action="">
+          <input type="text" placeholder="Email" id="email" />
+          <br />
+          <input type="password" id="pass" placeholder="Password" />
+          <br />
+          <p>
+            Forgot your password?<a href="" style="color: black">Retrieve</a>
+          </p>
+
+          <input type="submit" value="LOGIN" id="sub" />
+        </form>
+        <p>
+          Don't have an account? <a href="signup.html" style="color: black">SIGN UP</a>
+        </p>
+        <div>
+          <p>
+            <a
+              href="https://support.trackingtime.co/en/articles/1956503-terms-of-service"
+              style="color: black"
+              >Terms of service </a
+            ><span> / </span><a href="" style="color: black">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+    let arr = JSON.parse(localStorage.getItem("signup")) || [];
+    let form = document.querySelector("form")
+      form.addEventListener("submit",login)
+    function login(event){
+      event.preventDefault()
+      let obj={
+        emailid:form.email.value,
+        password:form.pass.value
+      }
+      display(obj)
+    }
+    function display(obj){
+        for(let i=0;i<arr.length;i++){
+            if(arr[i].email==obj.emailid && arr[i].pass==obj.password){
+                return alert("login successful")
+                
+            }
+        }
+        return alert("email/password are incorrect")
+
+    }
+</script>
